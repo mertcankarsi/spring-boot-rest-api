@@ -64,3 +64,16 @@ src/main/java/com/example/api/
 - In-memory H2 database
 - Lombok for reducing boilerplate code
 - Maven for dependency management and build
+
+## CI/CD
+
+This project uses GitHub Actions for continuous integration and deployment. The workflow includes:
+
+- Automated builds on push and pull requests
+- Java 21 setup
+- Maven build and test execution
+- Artifact upload for successful builds
+
+The workflow runs on:
+- Push to `main` and `feature/*` branches
+- Pull requests to `main` branch
